@@ -1,14 +1,12 @@
 return {
-  {
-    "folke/tokyonight.nvim",
-    lazy = true,
-    opts = { style = "moon" },
-  },
+  -- add gruvbox
+  { "bluz71/vim-moonfly-colors", name = "moonfly", lazy = false, priority = 1000 },
 
+  -- Configure LazyVim to load gruvbox
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "tokyonight",
+      colorscheme = "moonfly",
     },
   },
 }
